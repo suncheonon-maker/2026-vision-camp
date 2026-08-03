@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Vision Camp | 등록 신청</title>
+<meta name="description" content="2026 Vision Camp 수련회 등록 신청 페이지 - 하박국 | 불공평한 세상, 믿음으로 다시 시작하라">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-badges">
+    <span>REVIVAL</span><span>RENEWAL</span><span>RESTART</span>
+  </div>
+  <p class="hero-eyebrow">JEONJU CCC · AUG 18-19</p>
+  <h1 class="hero-title">VISION<br>CAMP</h1>
+  <p class="hero-verse">"의인은 그 믿음으로 말미암아 살리라"</p>
+  <p class="hero-year">2026 Vision Camp</p>
+  <a href="#register" class="hero-cta">등록 신청하기</a>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="intro-lead">말씀으로 방학을 돌아보고,<br>믿음으로 2학기를 준비하는 시간!</p>
+    <p class="intro-body">
+      이번 수련회에서는 하박국 IBS를 통해<br>
+      불공평한 세상 속에서 그리스도의 제자로<br>
+      믿음으로 다시 시작하는 삶을 도전합니다. 👊🏻
+    </p>
+
+    <div class="theme-card">
+      <p class="theme-label">✨ 수련회 주제</p>
+      <p class="theme-title">하박국 | 불공평한 세상, 믿음으로 다시 시작하라</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <p class="pillar-icon">🔥</p>
+        <h3>REVIVAL | 부흥</h3>
+        <p>하나님의 일하심을 바라보며,<br>현실보다 하나님을 신뢰하는 믿음 회복하기 ✌🏻</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-icon">🌱</p>
+        <h3>RENEWAL | 갱신</h3>
+        <p>말씀 앞에서 삶을 돌아보고,<br>믿음의 기준으로 삶의 방향을 새롭게 하기 ✌🏻</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-icon">🚀</p>
+        <h3>RESTART | 재시작</h3>
+        <p>2학기 사역과 일상을 준비하며,<br>기도와 결단으로 새롭게 출발하기 ✌🏻</p>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <p class="info-label">📅 일정</p>
+        <p class="info-value">2026년 8월 18일(월) ~ 19일(화)</p>
+      </div>
+      <div class="info-item">
+        <p class="info-label">💰 회비</p>
+        <p class="info-value">30,000원</p>
+      </div>
+      <div class="info-item">
+        <p class="info-label">📍 장소</p>
+        <p class="info-value">전주CCC 회관</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="register">
+    <h2>수련회 등록 신청</h2>
+    <p class="register-sub">아래 정보를 입력하고 등록을 완료해주세요.</p>
+
+    <form id="regForm" novalidate>
+      <div class="field">
+        <label for="name">이름 <span class="req">*</span></label>
+        <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required autocomplete="name">
+        <p class="error" data-error-for="name">이름을 입력해주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>캠퍼스 <span class="req">*</span></label>
+        <div class="pill-group" id="campusGroup" role="radiogroup" aria-required="true">
+          <label class="pill"><input type="radio" name="campus" value="전북대"><span>전북대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="전주대"><span>전주대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="우석대"><span>우석대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="교육대"><span>교육대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="예수대"><span>예수대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="기전대"><span>기전대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="비전대"><span>비전대</span></label>
+          <label class="pill"><input type="radio" name="campus" value="한일장신대"><span>한일장신대</span></label>
+        </div>
+        <p class="error" data-error-for="campus">캠퍼스를 선택해주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>학번 <span class="req">*</span></label>
+        <div class="pill-group" id="gradeGroup" role="radiogroup" aria-required="true">
+          <label class="pill"><input type="radio" name="grade" value="21학번"><span>21학번</span></label>
+          <label class="pill"><input type="radio" name="grade" value="22학번"><span>22학번</span></label>
+          <label class="pill"><input type="radio" name="grade" value="23학번"><span>23학번</span></label>
+          <label class="pill"><input type="radio" name="grade" value="24학번"><span>24학번</span></label>
+          <label class="pill"><input type="radio" name="grade" value="25학번"><span>25학번</span></label>
+          <label class="pill"><input type="radio" name="grade" value="26학번"><span>26학번</span></label>
+          <label class="pill"><input type="radio" name="grade" value="기타"><span>기타</span></label>
+        </div>
+        <input type="text" id="gradeOther" class="grade-other" placeholder="학번을 직접 입력해주세요" hidden>
+        <p class="error" data-error-for="grade">학번을 선택해주세요.</p>
+      </div>
+
+      <button type="submit" id="submitBtn" class="submit-btn">
+        <span class="btn-text">등록 완료하기</span>
+        <span class="btn-spinner" hidden></span>
+      </button>
+      <p class="form-note">Google Forms를 통해 비밀번호를 제출하지 마세요.</p>
+    </form>
+
+    <div id="successPanel" class="success-panel" hidden>
+      <p class="success-icon">✅</p>
+      <h3>등록이 완료되었습니다!</h3>
+      <p>2026 Vision Camp에 함께해주셔서 감사합니다.<br>회비 및 자세한 안내는 순장님을 통해 전달됩니다.</p>
+      <button type="button" id="resetBtn" class="ghost-btn">다른 사람 등록하기</button>
+    </div>
+
+    <div id="errorPanel" class="error-panel" hidden>
+      <p>제출 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>JEONJU CCC · 2026 Vision Camp</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
