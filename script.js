@@ -47,6 +47,11 @@ function validate() {
   setFieldValid(gradeField, gradeOk);
   valid = valid && gradeOk;
 
+  const phoneField = document.getElementById("phone").closest(".field");
+  const phoneOk = document.getElementById("phone").value.trim().length > 0;
+  setFieldValid(phoneField, phoneOk);
+  valid = valid && phoneOk;
+
   return valid;
 }
 
@@ -70,6 +75,7 @@ form.addEventListener("submit", async (e) => {
     이름: document.getElementById("name").value.trim(),
     캠퍼스: campus,
     학번: grade,
+    연락처: document.getElementById("phone").value.trim(),
   };
 
   if (SCRIPT_URL === "YOUR_DEPLOYED_WEB_APP_URL_HERE") {

@@ -10,12 +10,13 @@ function doPost(e) {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
   const data = JSON.parse(e.postData.contents);
 
-  // 기존 시트의 열 순서(타임스탬프 | 1. 이름 | 2. 캠퍼스 | 3. 학번)에 맞춰 추가
+  // 기존 시트의 열 순서(타임스탬프 | 1. 이름 | 2. 캠퍼스 | 3. 학번 | 4. 연락처)에 맞춰 추가
   sheet.appendRow([
     new Date(),
     data["이름"] || "",
     data["캠퍼스"] || "",
     data["학번"] || "",
+    data["연락처"] || "",
   ]);
 
   return ContentService
